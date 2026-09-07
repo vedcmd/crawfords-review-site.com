@@ -1,5 +1,5 @@
 {
-  "last_synced": "2026-09-01",
+  "last_synced": "2026-09-07",
   "tracking_code": "682a88c59a",
   "shop_base": "https://crawfordsmd.com",
   "products": [
@@ -26,7 +26,8 @@
       "stock": "In Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "minelab-equinox-900",
@@ -51,7 +52,8 @@
       "stock": "In Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "xp-deus2",
@@ -76,7 +78,8 @@
       "stock": "In Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "minelab-x-terra-elite",
@@ -101,7 +104,8 @@
       "stock": "In Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "nokta-legend-2",
@@ -123,10 +127,11 @@
         "value": 4.8,
         "total": 4.2
       },
-      "stock": "In Stock",
+      "stock": "Out Of Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "xp-icon-x",
@@ -151,7 +156,8 @@
       "stock": "In Stock",
       "early_verdict": true,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "simplex-ultra",
@@ -173,10 +179,11 @@
         "value": 4.6,
         "total": 3.9
       },
-      "stock": "In Stock",
+      "stock": "Out Of Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     },
     {
       "slug": "minelab-x-terra-pro",
@@ -201,7 +208,8 @@
       "stock": "In Stock",
       "early_verdict": false,
       "review_status": "live",
-      "review_label": "Read review"
+      "review_label": "Read review",
+      "price_seen": "£0.00"
     }
   ],
   "retired": [
@@ -219,7 +227,7 @@
     },
     "google": {
       "rating": "4.9",
-      "count": "1,736",
+      "count": "1,733",
       "label": "Top Quality Store",
       "url": "https://www.google.com/storepages?q=crawfordsmd.com&c=GB&v=19"
     },
