@@ -1,5 +1,5 @@
 {
-  "last_synced": "2026-09-28",
+  "last_synced": "2026-10-05",
   "tracking_code": "682a88c59a",
   "shop_base": "https://crawfordsmd.com",
   "products": [
@@ -23,7 +23,7 @@
         "value": 4.3,
         "total": 4.8
       },
-      "stock": "In Stock",
+      "stock": "Out Of Stock",
       "early_verdict": false,
       "review_status": "live",
       "review_label": "Read review",
@@ -127,7 +127,7 @@
         "value": 4.8,
         "total": 4.2
       },
-      "stock": "In Stock",
+      "stock": "Out Of Stock",
       "early_verdict": false,
       "review_status": "live",
       "review_label": "Read review",
@@ -227,7 +227,7 @@
     },
     "google": {
       "rating": "4.9",
-      "count": "1,716",
+      "count": "1,711",
       "label": "Top Quality Store",
       "url": "https://www.google.com/storepages?q=crawfordsmd.com&c=GB&v=19"
     },
