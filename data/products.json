@@ -1,5 +1,5 @@
 {
-  "last_synced": "2026-10-19",
+  "last_synced": "2026-10-26",
   "tracking_code": "682a88c59a",
   "shop_base": "https://crawfordsmd.com",
   "products": [
@@ -23,7 +23,7 @@
         "value": 4.3,
         "total": 4.8
       },
-      "stock": "Out Of Stock",
+      "stock": "In Stock",
       "early_verdict": false,
       "review_status": "live",
       "review_label": "Read review",
@@ -227,7 +227,7 @@
     },
     "google": {
       "rating": "4.9",
-      "count": "1,695",
+      "count": "1,688",
       "label": "Top Quality Store",
       "url": "https://www.google.com/storepages?q=crawfordsmd.com&c=GB&v=19"
     },
