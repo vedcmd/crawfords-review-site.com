@@ -222,7 +222,7 @@
   "platforms": {
     "trustpilot": {
       "rating": "4.8",
-      "count": "3,421",
+      "count": "3,463",
       "label": "Excellent"
     },
     "google": {
@@ -238,7 +238,7 @@
     },
     "blended": {
       "rating": "4.8",
-      "count": "3,653"
+      "count": "3,695"
     }
   },
   "store": {

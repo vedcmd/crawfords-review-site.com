@@ -43,6 +43,16 @@ def pct(score):
 def esc(s):
     return html.escape(str(s), quote=True)
 
+def fmt_long_date(d):
+    """'2026-11-28' -> '28 November 2026'."""
+    try:
+        y, m, dd = str(d).split("-")
+        months = ["January", "February", "March", "April", "May", "June", "July",
+                  "August", "September", "October", "November", "December"]
+        return f"{int(dd)} {months[int(m)-1]} {y}"
+    except Exception:
+        return str(d)
+
 # ─────────────────────────────────────────────── shared chrome ──
 
 SVG_DEFS = """
@@ -319,13 +329,13 @@ def quotes_wall():
     return """<div class="wall-grid">
       <div class="rev">
         <div class="rev-top"><span class="plogo dark"><svg><use href="#lg-tpstar"/></svg><span class="pname">Trustpilot</span></span><span class="rating">5★ · verified</span></div>
-        <p>"I have been extremely impressed by Crawfords throughout the whole buying and aftersales experience… the greatest treasure we've found so far is Crawfords themselves."</p>
-        <div class="who"><b>Jonathan Turner</b>11 April 2026</div>
+        <p>"Very helpful, very good price, you can't beat a Black Friday deal. Resolved a delivery issue very quickly. Highly recommended. Thank you."</p>
+        <div class="who"><b>Robert Jenkins</b>28 November 2026</div>
       </div>
       <div class="rev">
         <div class="rev-top"><span class="plogo dark"><svg><use href="#lg-tpstar"/></svg><span class="pname">Trustpilot</span></span><span class="rating">5★ · verified</span></div>
-        <p>"Smooth process during the purchase. By mistake an additional order was made by me. However, within 10 mins CMD called me and explained the situation. Refunds were issued promptly."</p>
-        <div class="who"><b>Ivan Guberov</b>26 June 2026</div>
+        <p>"From initial enquiry to delivery Crawford have been excellent. My first contact was with Scott who identified which detector was the ideal choice for me. I placed an order late Thursday and my goods were delivered the next morning."</p>
+        <div class="who"><b>Mark Ellis</b>21 November 2026</div>
       </div>
       <div class="rev">
         <div class="rev-top"><span class="plogo dark"><svg><use href="#lg-google"/></svg><span class="pname">Google</span></span><span class="rating">5★</span></div>
@@ -340,6 +350,55 @@ def quotes_wall():
     </div>"""
 
 # ─────────────────────────────────────────────── pages ──
+
+BF_END = date(2026, 11, 30)   # Black Friday weekend runs to Cyber Monday 30 Nov
+
+PACKS = [
+    ("Minelab Manticore Deep Pack", "Coiltek Mythtek 18\" + M8 coils · Pro-Find 40 · Pro Backpack", "/manticore-deep-pack", "Save 15%"),
+    ("Minelab Manticore Beach Pack", "M15 + M9 coils · sand scoop · Pro-Find 40 · waterproof headphones", "/manticore-beach-pack", "Save 20%"),
+    ("Minelab Equinox 900 Deep Pack", "Coiltek 18\" NOX coil · Pro-Find 40 · Pro Backpack", "/equinox-900-deep-pack", "Save 17%"),
+    ("Minelab Equinox 900 Beach Pack", "EQX15 coil · sand scoop · Pro-Find 40 · waterproof headphones", "/equinox-900-beach-pack", "Pack deal"),
+    ("Minelab X-Terra Elite Expedition Pack", "Best-value Multi-IQ, packed for travel — Expedition Extra also available", "/minelab-x-terra-elite-expedition", "Save 5%"),
+    ("Minelab X-Terra Pro Bundle", "The rugged workhorse + free Pro-Find 15 pinpointer", "/minelab-x-terra-pro-bundle", "Save 15%"),
+    ("Minelab Vanquish 340 Starter Bundle", "The cheapest sensible route into Multi-IQ detecting", "/vanquish340-starter", "Save 33%"),
+    ("NEW · Rutus Versa", "Polish multi-frequency wildcard — read our first look", "/rutus-versa", "New in"),
+]
+
+def promo_band():
+    """Homepage bundles band. Until 30 Nov it carries Black Friday framing and
+    the shop's current savings badges; after that it renders evergreen, so the
+    weekly rebuild retires the promo automatically."""
+    bf = date.today() <= BF_END
+    items = []
+    for name, what, path, badge in PACKS:
+        if path == "/rutus-versa":
+            href, target = "/guides/rutus-versa-first-look/", ""
+        else:
+            href, target = shop_url(path), ' target="_blank" rel="noopener"'
+        k = badge if bf or badge == "New in" else "Bundle"
+        items.append(f'<a class="mini" href="{href}"{target}>'
+                     f'<span class="k">{esc(k)}</span><h4>{esc(name)}</h4>'
+                     f'<span class="d">{esc(what)}</span></a>')
+    items_html = "\n".join(items)
+    if bf:
+        head_html = ('<div><div class="eyebrow" style="color:var(--red,#c8102e)">Black Friday weekend · ends Monday 30 November</div>'
+                     '<h2>The Minelab packs, on Black Friday pricing</h2></div>'
+                     '<p>Deep Packs, Beach Packs and starter bundles all carry Black Friday savings at crawfordsmd.com right now. '
+                     'Savings shown were checked today; live prices are always on the product page.</p>')
+        cta = (f'<div class="cta-band"><div><h3>Not sure which pack fits your ground?</h3>'
+               f'<p>Our new guide breaks down every Deep, Beach and Expedition pack — what\'s in each and who it\'s for.</p></div>'
+               f'<a class="btn btn-red" href="/guides/minelab-deep-pack-vs-beach-pack/">Read the packs guide</a></div>')
+    else:
+        head_html = ('<div><div class="eyebrow">Ready-built kits</div>'
+                     '<h2>Detector packs &amp; bundles</h2></div>'
+                     '<p>Machine-plus-accessory kits built for a job: depth, the beach, or a first season. Live prices at crawfordsmd.com.</p>')
+        cta = (f'<div class="cta-band"><div><h3>Which pack fits your ground?</h3>'
+               f'<p>Our guide breaks down every Deep, Beach and Expedition pack — what\'s in each and who it\'s for.</p></div>'
+               f'<a class="btn btn-red" href="/guides/minelab-deep-pack-vs-beach-pack/">Read the packs guide</a></div>')
+    return (f'<section style="padding-bottom:0"><div class="wrap">'
+            f'<div class="sec-head">{head_html}</div>'
+            f'<div class="mini-list">{items_html}</div>'
+            f'{cta}</div></section>')
 
 def page_home():
     man = P["minelab-manticore"]
@@ -398,6 +457,7 @@ def page_home():
     <div class="plat"><div class="n">6 days</div><div class="l">Scunthorpe store open weekly</div></div>
   </div>
 </div>
+{promo_band()}
 <section id="leaderboard">
   <div class="wrap">
     <div class="sec-head">
@@ -431,11 +491,11 @@ def page_home():
       <a class="btn btn-line" href="/guides/">All articles</a>
     </div>
     <div class="mini-list">
+      <a class="mini" href="/guides/rutus-versa-first-look/"><span class="k">New release</span><h4>Rutus Versa First Look: The Polish Multi-Frequency Wildcard</h4><span class="d">New</span></a>
+      <a class="mini" href="/guides/minelab-deep-pack-vs-beach-pack/"><span class="k">Buying advice</span><h4>Minelab Deep Pack vs Beach Pack: Which Bundle Actually Suits You?</h4><span class="d">New</span></a>
+      <a class="mini" href="/guides/minelab-vanquish-340-vs-360/"><span class="k">Versus</span><h4>Minelab Vanquish 340 vs 360: The £60 Question Answered</h4><span class="d">New</span></a>
+      <a class="mini" href="/guides/minelab-ml60-vs-wm09/"><span class="k">Accessories</span><h4>Minelab ML60 vs WM09: Stop — They Don't Do the Same Job</h4><span class="d">New</span></a>
       <a class="mini" href="/comparisons/nokta-legend-2-vs-minelab-equinox-900/"><span class="k">Versus</span><h4>Nokta Legend 2 vs Minelab Equinox 900: Which Wins?</h4><span class="d">Live</span></a>
-      <a class="mini" href="/comparisons/xp-icon-x-vs-minelab-manticore/"><span class="k">Versus</span><h4>XP ICON X vs Minelab Manticore: Head-to-Head</h4><span class="d">Live</span></a>
-      <a class="mini" href="/guides/beach-metal-detecting-uk/"><span class="k">Guide</span><h4>Beach Metal Detecting in the UK: Why the Beach Beats Most Machines</h4><span class="d">Live</span></a>
-      <a class="mini" href="/guides/waterproof-metal-detectors-explained/"><span class="k">Guide</span><h4>What "Waterproof" Actually Means on a Metal Detector</h4><span class="d">Live</span></a>
-      <a class="mini" href="/guides/uk-metal-detecting-permissions/"><span class="k">Guide</span><h4>UK Metal Detecting Permissions: The Rules Before You Dig</h4><span class="d">Live</span></a>
     </div>
   </div>
 </section>
@@ -571,7 +631,7 @@ def page_guide(slug):
     body = f"""{header("/guides/")}
 {p_hero(f'<a href="/">Home</a> / <a href="/guides/">Blog</a> / {g["kicker"]}',
         g["title"], g["desc"],
-        f'Published <b>31 July 2026</b> · By the <b>Crawfords Metal Detectors team</b>')}
+        f'Published <b>{fmt_long_date(g["date"])}</b> · By the <b>Crawfords Metal Detectors team</b>')}
 <div class="article">
   {g["body"]}
   <div class="cta-band">

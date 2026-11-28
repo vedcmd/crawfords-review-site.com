@@ -38,7 +38,7 @@ REVIEWS = {
               ("Waterproof", "Submersible to 5m"),
               ("Audio", "Built-in speaker, Bluetooth low-latency wireless"),
               ("Warranty", "3-year Minelab manufacturer warranty via Crawfords (authorised dealer)")],
-    "compare_note": "Deciding between the flagships? Read the <a href='/comparisons/xp-icon-x-vs-minelab-manticore/'>XP ICON X vs Manticore comparison</a> or the <a href='/comparisons/xp-deus-2-vs-minelab-manticore/'>Deus 2 head-to-head</a>.",
+    "compare_note": "Deciding between the flagships? Read the <a href='/comparisons/xp-icon-x-vs-minelab-manticore/'>XP ICON X vs Manticore comparison</a> or the <a href='/comparisons/xp-deus-2-vs-minelab-manticore/'>Deus 2 head-to-head</a>. The Manticore also comes as a ready-built <a href='/guides/minelab-deep-pack-vs-beach-pack/'>Deep Pack or Beach Pack bundle</a>.",
     "faqs": [
       ("Is the Manticore better than the Equinox 900?",
        "On difficult, mineralised or iron-heavy ground, yes — the Multi-IQ+ implementation is stronger and the 2D target trace gives you more to work with. On easier ground the gap narrows considerably, which is why the Equinox 900 remains our best all-terrain pick."),
@@ -77,7 +77,7 @@ REVIEWS = {
               ("Waterproof", "Submersible to 5m"),
               ("Audio", "Built-in speaker, Bluetooth wireless"),
               ("Warranty", "3-year Minelab manufacturer warranty via Crawfords (authorised dealer)")],
-    "compare_note": "See how it fares against the value challenger in <a href='/comparisons/nokta-legend-2-vs-minelab-equinox-900/'>Legend 2 vs Equinox 900</a>.",
+    "compare_note": "See how it fares against the value challenger in <a href='/comparisons/nokta-legend-2-vs-minelab-equinox-900/'>Legend 2 vs Equinox 900</a> — or see the ready-built <a href='/guides/minelab-deep-pack-vs-beach-pack/'>Equinox 900 Deep Pack and Beach Pack bundles</a>.",
     "faqs": [
       ("Is the Equinox 900 good for beaches?",
        "Yes — this is its strongest suit relative to price. Simultaneous multi-frequency plus dedicated wet-sand and surf modes keep it stable on conductive salt sand, and the whole unit submerges to 5m."),
@@ -148,7 +148,7 @@ REVIEWS = {
               ("Waterproof", "Submersible to 5m"),
               ("Audio", "ML-85 wireless headphones (current bundle), built-in speaker"),
               ("Warranty", "3-year Minelab manufacturer warranty via Crawfords (authorised dealer)")],
-    "compare_note": "Weighing it against the rugged single-frequency option? See the <a href='/reviews/minelab-x-terra-pro-review/'>X-Terra Pro review</a>.",
+    "compare_note": "Weighing it against the rugged single-frequency option? See the <a href='/reviews/minelab-x-terra-pro-review/'>X-Terra Pro review</a>. The Elite also ships as the <a href='/guides/minelab-deep-pack-vs-beach-pack/'>Expedition Pack and Expedition Extra bundles</a>, which stay in stock when the bare machine sells out.",
     "faqs": [
       ("X-Terra Elite or X-Terra Pro?",
        "They share a family name but not a technology. The Elite runs Multi-IQ simultaneous multi-frequency; the Pro is Pro-Switch switchable single frequency. If beaches or mineralised ground feature in your plans, the Elite is worth the difference."),
@@ -544,5 +544,82 @@ GUIDES.update({
 <h2>Etiquette that keeps rallies happening</h2>
 <p>Fill every hole, take all rubbish including yours and other people's, record findspots for the Portable Antiquities Scheme, and report anything that may qualify under the Treasure Act 1996. Rallies continue because landowners let them — see our <a href="/guides/uk-metal-detecting-permissions/">UK permissions guide</a> for the full legal picture.</p>
 """
+  },
+})
+
+# ── November 2026 additions ──────────────────────────────────────────
+# New release coverage, the bundle packs guide, and two more gist
+# articles rewritten from crawfordsmd.com blog posts (Nov 2026).
+GUIDES.update({
+  "rutus-versa-first-look": {
+    "title": "Rutus Versa First Look: The Polish Multi-Frequency Wildcard",
+    "desc": "The Rutus Versa lands at Crawfords — five multi-frequency modes or a tunable 4–40 kHz single frequency, waterproof to 2.5m, WiFi updates. First look, before the field test.",
+    "kicker": "New release",
+    "date": "2026-11-28",
+    "body": """
+<p>A new name has arrived on the Crawfords shelves: the <b>Rutus Versa</b>, from the small Polish manufacturer Rutus. This is a first look based on the specification and our counter-side handling — it has not yet been through our field-test process, so there is no editorial score here. We would rather tell you that plainly than dress a spec read-through up as a verdict.</p>
+<h2>What makes it interesting</h2>
+<p>The headline is frequency flexibility that nothing else at its price matches: <b>five multi-frequency modes</b>, or a <b>single frequency you can tune anywhere from 4 to 40 kHz</b> — in 0.2 kHz steps up to 14.2 kHz and 0.6 kHz steps above that. An EMI preview helps you dodge electrical interference. To be clear on the badge question: this is Rutus's own multi-frequency system, not Minelab Multi-IQ — our <a href="/guides/multi-frequency-vs-single-frequency/">frequency technology guide</a> explains why the platforms differ.</p>
+<h2>The spec that matters</h2>
+<p>Waterproof to <b>2.5 metres</b> — wading and wet sand, not diving. Internal rechargeable battery quoted at 10–25 hours (about 15 typical), chargeable from a power bank <i>while you detect</i>, which is a genuinely practical touch. Seven factory search programs (including Beach and Beach Dual), four user slots, a 120-point target ID scale running -29 to 90, automatic ground balance with a Hot Rock setting, and software updates over WiFi. It weighs 1,330 g with the DD28 coil and folds to 60 cm. Warranty is 2 years.</p>
+<h2>Where it might fit</h2>
+<p>On paper the Versa squares up against the <a href="/reviews/nokta-legend-2-review/">Nokta Legend 2</a> — another value-focused, fully-waterproof multi-frequency machine with deep customisation. The Nokta is submersible further and has a bigger UK user base; the Rutus counters with that tunable single-frequency range, which tinkerers will love. Expect a learning period: 30 sensitivity levels and 120-point notch control is not a switch-on-and-go proposition.</p>
+<h2>Our honest position</h2>
+<p>We stock it, it is in store now, and we are genuinely curious — but curiosity is not a score. The Versa goes onto the leaderboard only after it has done proper time in Lincolnshire soil. Until then, the full specification and current price are on the <a href="https://crawfordsmd.com/rutus-versa?tracking=682a88c59a&amp;utm_source=cmd-reviews&amp;utm_medium=referral&amp;utm_campaign=reviews-site" target="_blank" rel="noopener">Rutus Versa product page</a>, and the team on 01724 845608 will give you a straight answer on whether it suits your ground.</p>
+""",
+  },
+  "minelab-deep-pack-vs-beach-pack": {
+    "title": "Minelab Deep Pack vs Beach Pack: Which Bundle Actually Suits You?",
+    "desc": "Manticore and Equinox 900 Deep Packs and Beach Packs explained — what's in each bundle, why the coil choice matters, and which detectorist each pack is built for.",
+    "kicker": "Buying advice",
+    "date": "2026-11-28",
+    "body": """
+<p>Crawfords now builds its two flagship Minelab machines — the <a href="/reviews/minelab-manticore-review/">Manticore</a> and the <a href="/reviews/minelab-equinox-900-review/">Equinox 900</a> — into ready-made <b>Deep Packs</b> and <b>Beach Packs</b>. The names are honest: each pack is the machine plus the exact accessories that specialise it for that job, at a bundle saving over buying the pieces separately. Here is what is actually in them, and how to pick.</p>
+<h2>The Deep Packs — built around a big coil</h2>
+<p>Depth is mostly coil area. Both Deep Packs swap in a large-aperture coil: the <b>Manticore Deep Pack</b> carries the Coiltek Mythtek 18" alongside the standard M8, and the <b>Equinox 900 Deep Pack</b> carries the Coiltek 18" NOX. Both add a Pro-Find 40 pinpointer and a Pro Backpack to lug it all. A coil that size reaches targets the standard 11" walks over — pasture, stubble and open parkland are its home. The trade-offs are real: more weight on the shaft, and less separation in dense iron, where a big coil sees several targets at once. If your permissions are iron-heavy medieval scatter, the standard coil serves you better — our <a href="/reviews/minelab-manticore-review/">Manticore review</a> covers why separation is the flagship's party trick.</p>
+<h2>The Beach Packs — coils, scoop and wet-sand audio</h2>
+<p>The Beach Packs solve beach detecting as a system. The <b>Manticore Beach Pack</b> pairs the M15 large coil with the compact M9, and adds an Emiter sand scoop, Pro-Find 40, trowel and waterproof headphones; the <b>Equinox 900 Beach Pack</b> does the same job around the EQX15 coil. The thinking: a big coil covers featureless dry sand fast, the small coil picks the tide-line and rock pools, the scoop recovers in seconds, and waterproof headphones mean the surf doesn't end your session. Both machines are submersible to 5m with dedicated salt modes — the technology case is in our <a href="/guides/beach-metal-detecting-uk/">beach detecting guide</a>.</p>
+<h2>Mid-range and starter bundles</h2>
+<p>The same logic runs down the range. The <b>X-Terra Elite Expedition Pack</b> and <b>Expedition Extra</b> bundle Minelab's best-value multi-frequency machine (<a href="/reviews/minelab-x-terra-elite-review/">our review</a>) with travel-ready accessories; the <b>X-Terra Pro Bundle</b> adds a free Pro-Find 15 pinpointer to the rugged single-frequency workhorse; and the <b>Vanquish 340 and 360 Starter Bundles</b> remain the cheapest sensible routes into Multi-IQ detecting.</p>
+<h2>Which pack, honestly</h2>
+<p><b>Inland pasture and open fields:</b> Deep Pack. <b>Coast within reach:</b> Beach Pack — the scoop alone changes recovery speed more than any setting. <b>Both?</b> Buy the machine in the pack that matches your usual ground; the other coil can follow later. Live bundle prices and stock are always on the <a href="https://crawfordsmd.com/metal-detector-bundles?tracking=682a88c59a&amp;utm_source=cmd-reviews&amp;utm_medium=referral&amp;utm_campaign=reviews-site" target="_blank" rel="noopener">Crawfords bundles page</a>.</p>
+""",
+  },
+  "minelab-vanquish-340-vs-360": {
+    "title": "Minelab Vanquish 340 vs 360: The £60 Question Answered",
+    "desc": "Vanquish 340 vs 360 compared for UK detectorists — search modes, the Equinox-matching Target ID scale, 5m waterproofing and batteries. Which entry Minelab to buy.",
+    "kicker": "Head-to-head",
+    "date": "2026-11-28",
+    "body": """
+<p>The two cheapest routes into Minelab's Multi-IQ technology sit close enough in price that the choice deserves a proper answer. Here is the one we give across the counter.</p>
+<h2>Start with what they share</h2>
+<p>Both the <b>Vanquish 340</b> and <b>Vanquish 360</b> run genuine Multi-IQ simultaneous multi-frequency — the same family of technology as the Equinox and <a href="/reviews/minelab-x-terra-elite-review/">X-Terra Elite</a>, and the single most consequential spec on either sheet. Neither is a single-frequency machine in marketing dress. That shared brain is why the 340 is still worth buying, and why the differences are about refinement, not capability.</p>
+<h2>Modes: why "Park" is a trap on UK ground</h2>
+<p>The 340 offers Coin, Jewellery and All Metal; the 360 renames the game with <b>Park, Beach and All Metal</b> — location-based modes, matching the convention on every higher Minelab. One warning matters more than the rest: <b>Park mode rejects Target IDs 1–20</b> to kill foil in municipal parks — exactly the band where hammered coins live. On UK fields, run All Metal as your default on either machine; use Beach for trashy ground and the coast.</p>
+<h2>The upgrade that actually teaches you</h2>
+<p>The 340 reads targets on a 50-number scale (-9 to +40). The 360 reads on <b>-19 to 99 — the identical scale the Equinox series uses</b>. Finer resolution means a Victorian penny and a modern coin stop landing on the same number — and every ID you memorise on a 360 transfers straight to an <a href="/reviews/minelab-equinox-900-review/">Equinox 900</a> when you upgrade. Two seasons of ID memory move with you.</p>
+<h2>Water, pinpoint, power</h2>
+<p>The 360 is <b>fully submersible to 5m (IP68)</b>; the 340's coil is waterproof but its control box is not — it's a land machine that can get its coil wet. The 360 adds a Pinpoint mode (tidier holes from day one; the 340 has none) and an internal rechargeable battery good for about 10 hours, against the 340's four AAs — which, in fairness, a corner shop can revive mid-dig.</p>
+<h2>Our answer</h2>
+<p>If the budget genuinely stops at the 340, it is no mistake — same engine, honest machine. But for anyone staying in the hobby past a season, the 360's waterproofing, pinpoint and Equinox-matching IDs are worth the stretch, and the <b>360 Starter Bundle</b> packages it with the essentials. The full spec tables and current prices are in the <a href="https://crawfordsmd.com/blog/minelab-vanquish-340-vs-360?tracking=682a88c59a&amp;utm_source=cmd-reviews&amp;utm_medium=referral&amp;utm_campaign=reviews-site" target="_blank" rel="noopener">complete comparison on the main site</a>; our <a href="/best/">beginners guide</a> shows where both sit against the wider field.</p>
+""",
+  },
+  "minelab-ml60-vs-wm09": {
+    "title": "Minelab ML60 vs WM09: Stop — They Don't Do the Same Job",
+    "desc": "ML60 earbuds vs WM09 wireless module explained: which Minelab detectors each works with, why the ML60 won't pair with a Manticore, and what Manticore owners should buy.",
+    "kicker": "Accessories",
+    "date": "2026-11-28",
+    "body": """
+<p>This is the most common audio mix-up we untangle on the phone, so let's be blunt at the top: <b>the ML60 does not work with the Manticore.</b> The two products sit side by side on the shelf and sound interchangeable. They are not even competitors.</p>
+<h2>What each one actually is</h2>
+<p>The <b>ML60</b> is a pair of wireless earbuds — Minelab's first — using Bluetooth LE Audio with the low-latency LC3 codec. It pairs with the <b>Vanquish 460, Vanquish 560 and Gold Monster 2000</b>, and that is the list. Light, cool in summer, fits under a beanie in winter.</p>
+<p>The <b>WM09</b> is not headphones at all. It is a small belt-worn module: the detector sends audio to it wirelessly, and <i>your own wired headphones</i> plug into it. It works with the <b>Manticore, Equinox 700 and 900, and the X-Terra Elite and Pro</b> — and it ships with no headphones, because the point is choosing your own.</p>
+<h2>Why the ML60 won't pair with the big machines</h2>
+<p>"It has Bluetooth" is not enough. The ML60 speaks Bluetooth LE Audio; the Manticore-class machines use Minelab's own low-latency wireless system (the one the ML85 and ML105 headphones speak). Both are wireless; they do not talk to each other. No firmware update changes that.</p>
+<h2>What a Manticore owner should actually do</h2>
+<p>Usually: nothing. <b>Every Manticore ships with ML105 wireless headphones</b> — most owners already have wireless sound. Buy a WM09 only if you want to use different headphones (any wired 3.5mm pair plugs straight in; ¼-inch pairs need the adaptor cable). The ML85 is the cheaper wireless-headphone route and also suits the <a href="/reviews/minelab-x-terra-elite-review/">X-Terra Elite</a>, which currently bundles it. In the water, neither applies — Minelab's waterproof headphones wire directly into the detector, because the WM09 itself is not waterproof.</p>
+<h2>The 10-second rule</h2>
+<p><b>Vanquish 460/560 → ML60. Manticore / Equinox 700 / 900 / X-Terra → WM09 or ML85/ML105. In water → wired waterproof headphones.</b> The full compatibility table for every current Minelab lives in the <a href="https://crawfordsmd.com/blog/minelab-ml60-vs-wm09?tracking=682a88c59a&amp;utm_source=cmd-reviews&amp;utm_medium=referral&amp;utm_campaign=reviews-site" target="_blank" rel="noopener">complete guide on the main site</a> — or call 01724 845608 and we will check your exact setup.</p>
+""",
   },
 })
